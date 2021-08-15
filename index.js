@@ -181,7 +181,7 @@ const saveEdit = (event) => {
       //changes in open task modal
       openTaskTitle.innerHTML = taskTitle.innerHTML;
       openTaskType.innerHTML = taskType.innerHTML;
-      openTaskDes = des.innerHTML;
+      openTaskDes.innerHTML = des.innerHTML;
     }
     return task;
   });
