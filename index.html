@@ -93,7 +93,7 @@
           <section class="row justify-content-center mt-5">
               <div class="col-md-8 col-lg-6">
                 <div class="input-group mb-3  shadow-lg p-3 mb-5 bg-body rounded">
-                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+                    <input type="text" id="searchbar" class="form-control" placeholder="Search by title..." aria-label="Search" aria-describedby="basic-addon1" onkeyup="searchFunction()">
                     <span class="input-group-text" role="button" id="basic-addon1"><i class="far fa-search"></i></span>
                   </div>
               </div>
@@ -101,7 +101,7 @@
 
           <!-- Card Container -->
 
-          <div class="row task-container"></div>
+          <div id="task-container" class="row task-container"></div>
 
       </main>
 

@@ -84,7 +84,7 @@ const addNewCard = () => {
     type: document.getElementById("taskType").value,
     description: document.getElementById("des").value,
   };
-
+ 
   taskStorage.push(taskData);
 
   updateLocalStorage();  
@@ -197,4 +197,18 @@ const saveEdit = (event) => {
 
   return;
 
+};
+
+const searchFunction = () =>{
+  let searchInput = document.getElementById("searchbar").value.toUpperCase();
+
+  taskStorage.forEach((taskData) => {
+    if(taskData.title.toUpperCase().indexOf(searchInput) >= 0)
+    {
+      document.getElementById(taskData.id).style.display = "";
+    }
+    else{
+      document.getElementById(taskData.id).style.display = "none";
+    }
+  });
 };
